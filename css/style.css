@@ -62,7 +62,7 @@ p {
 }
 /* End navbar */
 
-
+/* Start form  */
 section form input ,
 section form select {
     padding: 10px;
@@ -90,3 +90,27 @@ label {
     display: flex;
     flex-direction: column;
 }
+
+/* End form */
+
+
+/* Start Footer */
+footer {
+    background-color: #e2e2e2;
+}
+footer ul {
+    padding: 0;
+    padding-top: 20px;
+    margin: 0;
+}
+footer ul li{
+    list-style: none;
+    padding: 3px;
+    font-size: 18px;
+}
+footer  a{
+    text-decoration: none;
+    color: black;
+    
+}
+/* End Footer */
