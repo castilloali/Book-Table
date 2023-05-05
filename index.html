@@ -5,8 +5,144 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking | Chef's Cuisine</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <!-- Start navbar -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container pt-1">
+            <a class="navbar-brand" href="https://castilloali.github.io/Chef-s-Cuisine/">
+                <img  src="imags/logo.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="main">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link  p-lg-3 fs-5 " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 fs-5 " href="https://castilloali.github.io/menu/">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 fs-5 " href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 fs-5 " href="#">Contact</a>
+                    </li>
+                </ul>
+                <a class="Book-Table fw-bold fs-4 text-decoration-none" href="">Book Table</a>
+            </div>
+        </div>
+    </nav>
+    <!-- End navbar -->
+
+
+        <section id="form" data-aos="fade-up" class="aos-init aos-animate">
+            <div class="container">
+            <h3 class="form__title">Book Table</h3>
+            <div class="form__wrapper">
+                <form method="POST" name="booking"><input type="hidden" name="form-name" value="booking">
+                    <div class="row">
+                        <div class="form__group col-12 col-sm-6 col-md-6 col-lg-6 ">
+                            <label for="firstName">First Name</label>
+                            <input class="p-col-2 p-md-3 " type="text" id="firstName" name="First Name" required="" fdprocessedid="clygjq">
+                        </div>
+                        <div class="form__group col-12 col-sm-6 col-md-6 col-lg-6">
+                            <label for="lastName">Last Name</label>
+                            <input class="p-col-2 p-md-3 " type="text" id="lastName" name="Last Name" required="" fdprocessedid="vpv5c">
+                        </div>
+                        <div class="form__group col-12 col-sm-6 col-md-6 col-lg-6">
+                            <label for="email">Email</label>
+                            <input class="p-col-2 p-md-3 " type="email" id="email" name="Email" required="" fdprocessedid="6pilju">
+                        </div>
+                        <div class="form__group col-12 col-sm-6 col-md-6 col-lg-6">
+                            <label for="tableType">Table Type</label>
+                            <select class="p-col-2 p-md-3  " name="Table Type" id="tableType" required="" fdprocessedid="coxxuv">
+                            <option selected="" disabled="">Choose</option>
+                            <option value="small">Small(2 persons)</option>
+                            <option value="medium">Small(4 persons)</option>
+                            <option value="large">large(6 persons)</option>
+                            </select>
+                        </div>
+                        <div class="form__group col-12 col-sm-6 col-md-6 col-lg-6">
+                            <label for="guestNumber">Guest Number</label>
+                            <input class="p-col-2 p-md-3 " type="number" id="guestNumber" name="Guest Number" min="1" max="10" required="" fdprocessedid="0uagd">
+                        </div>
+                        <div class="form__group col-12 col-sm-6 col-md-6 col-lg-6">
+                            <label for="placement">Placement</label>
+                            <select class="p-col-2 p-md-3 " name="Placement" id="placement" fdprocessedid="s2b1jj">
+                            <option selected="" disabled="">Choose</option>
+                            <option value="outdoor">Outdoor</option>
+                            <option value="indoor">Indoor</option>
+                            <option value="rooftop">rooftop</option>
+                            </select>
+                        </div>
+                        <div class="form__group col-12 col-sm-6 col-md-6 col-lg-6">
+                            <label for="date">Date</label>
+                            <input class="p-col-2 p-md-3  " type="date" id="date" name="Date" required="">
+                        </div>
+                        <div class="form__group col-12 col-sm-6 col-md-6 col-lg-6">
+                            <label for="time">time</label>
+                            <input class="p-col-2 p-md-3  " type="time" id="time" name="Time" required="">
+                        </div>
+                        <div class="form__group form__group__full">
+                            <label for="note">Note</label>
+                            <textarea class="p-3" name="Note" id="note" rows="4" style="height: 174px;"></textarea>
+                        </div>
+                    </div>
+                    
+                <button type="submit" class="Book-Table fw-bold fs-4 text-decoration-none mt-4" fdprocessedid="ojrp9g">Book Table</button>
+                </form>
+            </div>
+            </div>
+        </section>
+        
+        <footer class="pt-5 pb-3" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <div class="pb-3"><img style="width: 150px;" src="imags/logo.svg" alt=""></div>
+                        <p>Fresh and delicious traditional Bangladeshi food to delight the whole family.</p>
+                        <h4>Follow us</h4>
+                        <div class="hold-social-media">
+                            <a href=""><i class="fa-brands fa-facebook p-2 " style="border: 1px solid #747474; background-color: #f7f7f7; border-radius: 7px;"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram p-2 " style="border: 1px solid #747474; background-color: #f7f7f7; border-radius: 7px;"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter p-2 " style="border: 1px solid #747474; background-color: #f7f7f7; border-radius: 7px;"></i></a>
+                        </div>
+                    </div>
+                    <div class="link col-lg-3 col-md-3">
+                        <ul class="">
+                            <li class="fs-5 fw-bold">Links</li>
+                            <a href=""><li>Home</li></a>
+                            <a href="https://castilloali.github.io/menu/"><li>Menu</li></a>
+                            <a href="https://castilloali.github.io/Book-Table/"><li>Book Table</li></a>
+                            <a href=""><li>About Us</li></a>
+                            <a href=""><li>contact Us</li></a>
+                            <a href=""><li>Privacy Policy</li></a>
+                        </ul>
+                    </div>
+                    <div class="support col-lg-3 col-md-3">
+                        <ul class="">
+                            <li class="fs-5 fw-bold">Support</li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Support Center</a></li>
+                            <li><a href="">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="Contact col-lg-3 col-md-3">
+                        <ul class="">
+                            <li class="fs-5 fw-bold">Contact</li>
+                            <li><a href="">+880123</a></li>
+                            <li><a href="">webcifar@gmail.com</a></li>
+                            <li><a href="">GEC Circle, Chittagong, Bangladesh</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
 </body>
 </html>
