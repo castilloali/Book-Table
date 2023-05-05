@@ -96,6 +96,7 @@ label {
 
 /* Start Footer */
 footer {
+    margin-top: 50px;
     background-color: #e2e2e2;
 }
 footer ul {
